@@ -27,12 +27,13 @@ Review test cases and generate review comments
 5. Add the review comment as a Cell Comment. The review comment could be added to a cell belonging to any of these test case elements:Test Case Name, Steps, Prerequisites, Expected Result.
 6. Do not add, delete or update any cell content. The goal is to only add review comments where necessary.  
    Add comments as Cell Comments.
-7. Use the specified workflow
+7. Always use the linked "Excel_utility.md" for selecting Excel version and adding reviews as threaded comments.
+8. Use the specified workflow
    1. Request clarifications to resolve information that is missing, contradictory or ambiguous.  
       Wait for user clarifications and confirmation. Continue only after user provides clarifications and gives approval.  
       If clarifications are not required, respond same to the chat window. Again continue only after user gives approval.
    2. Next generate downloadable excel document with test case review comments. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
-8. The deliverables should be the following  
+9. The deliverables should be the following  
    - Downloadable excel document with test case review comments. The comments should be added as Cell Comments.  
      The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".  
      e.g. 'SP203005_New SAAS Upgrade Request'
@@ -50,4 +51,5 @@ Review test cases and generate review comments
 
 
 ## Linked instructions
-- 'How to use.md'
+- 'How__to__use.md'
+- 'Excel_utility.md'
