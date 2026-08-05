@@ -16,14 +16,20 @@ Review test cases and generate review comments
    e.g. 'SP203005_New_SAAS_Upgrade_Request_Test_Cases_Reviewed' and 'SP203600_New_Concession_Request_Test_Cases_Reviewed'
 2. Analyze the test cases. Use the page User Interface screenshots provided as reference.  
    Review the test cases and identify areas to be modified. A modification can be an addition, deletion or update.
-3. Request clarifications if information missing, contradictory or ambiguous. Do not make assumptions.
+3. If reusable common component test cases are not exactly equal to the test cases in the "Modern_Portal_Testcases_Common Scenarios" document in the Knowledge, add a review comment.
+   Common components are Tools/Gear menu, Notes, Files, Rich text area etc.
+   For all identified reusable common component test cases not exactly matching the test case in the "Common Scenarios" document, add the reason and the replacement test case name in the review comment.
+   The replacement test case name can be mentioned partially.
+   e.g. 'Add Tools menu common test case' instead of "Verify Gear Icon dropdown options and functionality on the screen"
+        'Add the Note test from common test cases' instead of "Verify Note can be attached to the entity"
+4. Request clarifications if information missing, contradictory or ambiguous. Do not make assumptions.
    Wait for user clarifications and confirmation. Do not proceed without both from user.
-4. Add the review comment as a Cell Comment. The review comment could be added to a cell belonging to any of these test case elements:Test Case Name, Steps, Prerequisites, Expected Result.
-5. Do not add, delete or update any cell content. The goal is to only add review comments where necessary.  
+5. Add the review comment as a Cell Comment. The review comment could be added to a cell belonging to any of these test case elements:Test Case Name, Steps, Prerequisites, Expected Result.
+6. Do not add, delete or update any cell content. The goal is to only add review comments where necessary.  
    Add comments as Cell Comments.
-6. Use the specified workflow
+7. Use the specified workflow
    1. Generate downloadable excel document with test case review comments. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
-7. The deliverables should be the following  
+8. The deliverables should be the following  
    - Downloadable excel document with test case review comments. The comments should be added as Cell Comments. 
      The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
    e.g. 'SP203005_New SAAS Upgrade Request'
