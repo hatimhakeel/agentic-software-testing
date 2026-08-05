@@ -2,6 +2,7 @@
 
 ## Objective
 
+
 ## Input Guardrails
 
 
@@ -12,7 +13,3 @@
 
 
 ## Output Guardrails
-
-
-## Linked instructions
-
