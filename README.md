@@ -8,8 +8,14 @@ This repository is a collection of Custom GPTs that have been created to achieve
 
 The Custom GPTs are available for following phases,
 - Test Case Writing  
+  ```
   Test Generator 2.0
-- Test Case Reviewing  
+  ```
+- Test Case Reviewing
+  ```
   Test Reviewer
-- Test Case Review Applying  
+  ```
+- Test Case Review Applying
+  ```
   Test Reviews Apply
+  ```
