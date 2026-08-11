@@ -1,0 +1,5 @@
+interface:
+  display_name: Excel Diff Highlighter
+  short_description: Compare old and new Excel workbooks and highlight changed or added cells only.
+  icon: table_cells
+  accent_color: "#FFF2CC"

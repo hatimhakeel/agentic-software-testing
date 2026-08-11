@@ -62,8 +62,9 @@ Update test cases based on review comments
    Conside this as a user confirmation and approval. 
    Do not proceed with test case review apply until user has confirmed and approved.
 2. The deliverable excel worksheet/workbook must have only a single sheet.
-3. All updates cells must be highlighted.
+3. All updates cells must be highlighted. Use the excel-diff-highlighter skill in the Knowledge
 
 
 ## Linked instructions
 - 'How to use.md'
+- 'excel-diff-highlighter' from skill.zip
