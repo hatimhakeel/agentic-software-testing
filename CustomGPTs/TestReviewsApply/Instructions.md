@@ -4,6 +4,9 @@
 Update test cases based on review comments
 
 ## Input Guardrails
+- Validate test case document has at least one sheet with page Title and/or ScreenID combination
+  If test cases document is an excel worksheet/workbook, it should have at least one sheet with page Title and/or ScreenID for which test cases reviews is required.
+  If there are multiple sheets, display all sheets in chat window and request for the sheet for which reviews should be applied. Do not proceed without user confirmation of the sheet.
 - Validate test cases document has comments
   If test cases document is an excel worksheet use the Comments pane
   Do not proceed with test case review updates if their are no cell comments. Request user to add at least one comment and reupload the document to proceed.
@@ -44,7 +47,9 @@ Update test cases based on review comments
    Add the Review Reply in the corresponding new Replies column cell.
 8. Avoid assumptions if missing or contradictory information available.
 9. The deliverables should be the following
-   - Downloadable excel document with test case review updates, comments, replies, and highlighting for all modifications. Use highlighting only for the cells that were updated. Use the skills configured.
+   - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
+   e.g. SP204049_New Waiver Request
+   Further the excel document must have highlighting for all modifications. Use highlighting only for the cells that were updated. Use the skills configured.
 
 
 ## Constraints
@@ -53,6 +58,8 @@ Update test cases based on review comments
 
 
 ## Output Guardrails
+1. The deliverable excel worksheet/workbook must have only a single sheet.
+2. All updates cells must be highlighted.
 
 
 ## Linked instructions
