@@ -32,7 +32,7 @@ Update test cases based on review comments
    - Select the test case or test cases to be replaced by the common test case
    - Then delete the generated test cases that will be replaced
    - Add the common test case from the "Common Testcases" document in the Knowledge
-7. Add new Comment and Reply columns. Paste the Comment from the Review document in following format,
+7. Add new "Comments" and "Replies" columns, use the exact name. Paste the Comment from the Review document in following format,
    ```
    Column: {Table Header Name}
    {Comment}
@@ -41,11 +41,10 @@ Update test cases based on review comments
    Column: Steps
    In the Steps column remove the test data and keep it specific
    ```
-   Add the Review Reply in the corresponding new Reply column cell.
+   Add the Review Reply in the corresponding new Replies column cell.
 8. Avoid assumptions if missing or contradictory information available.
 9. The deliverables should be the following
-   - Downloadable excel document with test case review updates, comments and replies. Use the skills configured
-   - Downloadable excel document with test case review updates, comments and replies, but with highlighting for all modifications. Use highlighting only for the cells that were updated.
+   - Downloadable excel document with test case review updates, comments, replies, and highlighting for all modifications. Use highlighting only for the cells that were updated. Use the skills configured.
 
 
 ## Constraints
