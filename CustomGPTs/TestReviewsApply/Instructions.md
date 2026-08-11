@@ -14,7 +14,7 @@ Update test cases based on review comments
    e.g. 'SP204049_New Waiver Request_Test cases_Reviews' and 'SP204049_New Waiver Request_Test cases_Reviews_Apply'
 2. The review updates could be present in Steps, Prerequisites, Expected Result, Test Data column cells.
 3. Analyze review comments and update the relevant test case element: Steps, Prerequisite, Expected Result, Test Data column cells.
-4. Use the page User Interface screenshots provided.
+4. Use the page User Interface screenshots provided as reference.
 5. If a review comment identifies missing test cases, add the new test cases after the test case where comment was added.
    ```
    e.g.
@@ -32,11 +32,20 @@ Update test cases based on review comments
    - Select the test case or test cases to be replaced by the common test case
    - Then delete the generated test cases that will be replaced
    - Add the common test case from the "Common Testcases" document in the Knowledge
-7. Generate a reply to each comment, add the reply and post it in the excel document.
+7. Add new Comment and Reply columns. Paste the Comment from the Review document in following format,
+   ```
+   Column: {Table Header Name}
+   {Comment}
+   
+   e.g.
+   Column: Steps
+   In the Steps column remove the test data and keep it specific
+   ```
+   Add the Review Reply in the corresponding new Reply column cell.
 8. Avoid assumptions if missing or contradictory information available.
 9. The deliverables should be the following
-   - Downloadable excel document with test case review updates and comment replies. Use the skills configured
-   - Downloadable excel document containing only the diff between the base and the reviews applied test case documents. Use the skills configured.
+   - Downloadable excel document with test case review updates, comments and replies. Use the skills configured
+   - Downloadable excel document with test case review updates, comments and replies, but with highlighting for all modifications. Use highlighting only for the cells that were updated.
 
 
 ## Constraints
