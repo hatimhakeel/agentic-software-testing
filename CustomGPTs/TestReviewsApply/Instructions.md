@@ -58,8 +58,11 @@ Update test cases based on review comments
 
 
 ## Output Guardrails
-1. The deliverable excel worksheet/workbook must have only a single sheet.
-2. All updates cells must be highlighted.
+1. A summary response of all the sheet names is required, upon which user would type and input a prompt with a single sheet name. This must match any sheet name in the summary respone list, fully or partially.
+   Conside this as a user confirmation and approval. 
+   Do not proceed with test case review apply until user has confirmed and approved.
+2. The deliverable excel worksheet/workbook must have only a single sheet.
+3. All updates cells must be highlighted.
 
 
 ## Linked instructions
