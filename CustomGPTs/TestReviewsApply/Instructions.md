@@ -46,10 +46,13 @@ Update test cases based on review comments
    ```
    Add the Review Reply in the corresponding new Replies column cell.
 8. Avoid assumptions if missing or contradictory information available.
-9. The deliverables should be the following
+10. Use the specified workflow
+   1. Generate downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
+	2. Use the above excel document and the base excel document with the excel-diff-highlighter skill in the Knowledge. Generate a second downloadable excel with highlighting
+11. The deliverables should be the following
    - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
    e.g. SP204049_New Waiver Request
-   Further the excel document must have highlighting for all modifications. Use highlighting only for the cells that were updated. Use the skills configured.
+   - Downloadable excel document with test case review updates, comments, replies and deletions. This excel document must have highlighting for all modifications. Updated cells are highlighted in one color, deleted cells/rows are highlighted in a different color. Use the excel-diff-highlighter skill configured in Knowledge.
 
 
 ## Constraints
@@ -61,8 +64,9 @@ Update test cases based on review comments
 1. A summary response of all the sheet names is required, upon which user would type and input a prompt with a single sheet name. This must match any sheet name in the summary respone list, fully or partially.
    Conside this as a user confirmation and approval. 
    Do not proceed with test case review apply until user has confirmed and approved.
-2. The deliverable excel worksheet/workbook must have only a single sheet.
-3. All updates cells must be highlighted. Use the excel-diff-highlighter skill in the Knowledge
+2. The deliverable excel worksheets/workbooks must have only a single sheet in each of them.
+3. The review apply deliverable must have review updates, comments, replies.
+4. The review apply diff must have review updates, comments, replies and deletions with highlighting.
 
 
 ## Linked instructions
