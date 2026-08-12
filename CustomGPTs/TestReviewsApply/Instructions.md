@@ -52,7 +52,7 @@ Update test cases based on review comments
 11. The deliverables should be the following
    - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
    e.g. SP204049_New Waiver Request
-   - Downloadable excel document with test case review updates, comments, replies and deletions. This excel document must have highlighting for all modifications. Updated cells are highlighted in one color, deleted cells/rows are highlighted in a different color. Use the excel-diff-highlighter skill configured in Knowledge.
+   - Downloadable excel document with test case review updates, comments, replies. This excel document must have highlighting for all modifications. All updated cells are highlighted. Use the excel-diff-highlighter skill configured in Knowledge.
 
 
 ## Constraints
@@ -66,7 +66,7 @@ Update test cases based on review comments
    Do not proceed with test case review apply until user has confirmed and approved.
 2. The deliverable excel worksheets/workbooks must have only a single sheet in each of them.
 3. The review apply deliverable must have review updates, comments, replies.
-4. The review apply diff must have review updates, comments, replies and deletions with highlighting.
+4. The review apply diff must have review updates, comments, replies with highlighting.
 
 
 ## Linked instructions
