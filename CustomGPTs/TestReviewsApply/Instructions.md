@@ -48,11 +48,11 @@ Update test cases based on review comments
 8. Avoid assumptions if missing or contradictory information available.
 10. Use the specified workflow
    1. Generate downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
-	2. Use the above excel document and the base excel document with the excel-diff-highlighter skill in the Knowledge. Generate a second downloadable excel with highlighting
+	2. Use the above excel document and the base excel document with the excel-diff-highlighter skill in the Knowledge. Highlight the above generated excel document.
 11. The deliverables should be the following
-   - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
-   e.g. SP204049_New Waiver Request
-   - Downloadable excel document with test case review updates, comments, replies. This excel document must have highlighting for all modifications. All updated cells are highlighted. Use the excel-diff-highlighter skill configured in Knowledge.
+    - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
+    e.g. SP204049_New Waiver Request
+    This excel document must have highlighting for all modifications. All updated cells are highlighted. Use the excel-diff-highlighter skill configured in Knowledge.
 
 
 ## Constraints
@@ -64,9 +64,8 @@ Update test cases based on review comments
 1. A summary response of all the sheet names is required, upon which user would type and input a prompt with a single sheet name. This must match any sheet name in the summary respone list, fully or partially.
    Conside this as a user confirmation and approval. 
    Do not proceed with test case review apply until user has confirmed and approved.
-2. The deliverable excel worksheets/workbooks must have only a single sheet in each of them.
-3. The review apply deliverable must have review updates, comments, replies.
-4. The review apply diff must have review updates, comments, replies with highlighting.
+2. The deliverable excel worksheet/workbook must have only a single sheet in it.
+3. The review apply deliverable must have review updates, comments, replies with highlighting.
 
 
 ## Linked instructions
