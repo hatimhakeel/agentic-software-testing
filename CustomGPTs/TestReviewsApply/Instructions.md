@@ -22,12 +22,12 @@ Update test cases based on review comments
    ```
    e.g.
    Before review apply
-   TC_006: Verify Subject mandatory textbox behavior; Review comment: Renewal Opportunity is also mandatory
+   TC_006: Verify Summary mandatory inputs behavior; Review comment: CRM Info tab Renewal Opportunity is also mandatory
    TC_007: Verify tab navigation and active tab indicator
    
    After review apply
-   TC_006: Verify Subject mandatory textbox behavior; Review comment: Renewal Opportunity is also mandatory
-   TC_007: Verify Renewal Opportunity mandatory lookup behavior
+   TC_006: Verify Summary mandatory inputs behavior; Review comment: CRM Info tab Renewal Opportunity is also mandatory
+   TC_007: Verify CRM Info tab mandatory inputs behavior
    TC_008: Verify tab navigation and active tab indicator
    ```
    Revise the Test Case ID for all subsequent test cases.
