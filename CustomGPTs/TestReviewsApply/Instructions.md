@@ -58,8 +58,7 @@ Update test cases based on review comments
 
 
 ## Constraints
-1. Do not resolve the thread after posting the comment reply.
-2. Do not modify test cases reused from "Common Testcases" document. Paste them as it is, without any modifications.
+1. Do not modify test cases reused from "Common Testcases" document. Paste them as it is, without any modifications.
 
 
 ## Output Guardrails
