@@ -31,23 +31,30 @@ Update test cases based on review comments
    TC_008: Verify tab navigation and active tab indicator
    ```
    Revise the Test Case ID for all subsequent test cases.
-6. If a common UI component has multiple generated test cases with review comments available to few or all of them, Delete all such test cases related to the same UI component and Add the equivalent UI component test case from the "Common Scenarios" document.
-   
-   Ignore any inconsistency, ambiguity in the "Common Scenarios" document test case name or content. Give precedence to replacing all generated test cases of a common UI component with the equivalent test case in the "Common Scenarios" document.
-   ```
-   e.g. 
-   Before Review Apply
-   Test case: "Verify Details editor is optional" has comment "Get from common TC"
-   Test case: "Verify Details rich text editor formatting and persistence" has no comment
-   After Review Apply
-   Test case: "Verify the text area" common UI component test case
+6. Handling common UI component test cases with review comments
+   1. Table/Grid, Rich text editor, Navigation (pagination)  
+      These UI components can appear once per page, multiple times in the same tab or multiple times in a page. Each occurrence would have generated test cases.  
+      If review comments are available to few or all related test cases of an occurrence, Keep all generated test cases and Add the equivalent UI component test case from the "Common Scenarios" document.  
+      Revise the Test Case ID for all subsequent test cases.
+   2. Tools, Files, Notes, Filter (funnel filter)  
+      If these common UI components have multiple generated test cases with review comments available for few or all of them, Delete all such test cases related to the same UI component and Add the equivalent UI component test case from the "Common Scenarios" document.  
+      Revise the Test Case ID for all subsequent test cases.
+   3. Ignore any inconsistency, ambiguity in the "Common Scenarios" document test case name or content.  
+   4. Examples
+      ```
+      e.g. 
+      Before Review Apply
+      Test case: "Verify Details editor is optional" has comment "Get from common TC"
+      Test case: "Verify Details rich text editor formatting and persistence" has no comment
+      After Review Apply
+      Test case: "Verify the text area" common UI component test case
         
-   Before Review Apply
-   Test case: "Verify Files common component upload and persistence" has comment "Get from common TC".
-   Test case: "Verify Files common component delete behavior" has no comment.
-   After Review Apply
-   Test case: "Verify the file upload function" common UI component test case
-   ```
+      Before Review Apply
+      Test case: "Verify Files common component upload and persistence" has comment "Get from common TC".
+      Test case: "Verify Files common component delete behavior" has no comment.
+      After Review Apply
+      Test case: "Verify the file upload function" common UI component test case
+      ```
 7. If comments available in Comments pane; Add new "Comments" and "Replies" columns, use the exact name. Paste the Comment from the Review document in following format,
    ```
    Column: {Table Header Name}
