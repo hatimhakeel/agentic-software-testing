@@ -31,10 +31,23 @@ Update test cases based on review comments
    TC_008: Verify tab navigation and active tab indicator
    ```
    Revise the Test Case ID for all subsequent test cases.
-6. If a review comment requests using common test cases do the following,
-   - Select the test case or test cases to be replaced by the common test case
-   - Then delete the generated test cases that will be replaced
-   - Add the common test case from the "Common Testcases" document in the Knowledge
+6. If a common UI component has multiple generated test cases with review comments available to few or all of them, Delete all such test cases related to the same UI component and Add the equivalent UI component test case from the "Common Scenarios" document.
+   
+   Ignore any inconsistency, ambiguity in the "Common Scenarios" document test case name or content. Give precedence to replacing all generated test cases of a common UI component with the equivalent test case in the "Common Scenarios" document.
+   ```
+   e.g. 
+   Before Review Apply
+   Test case: "Verify Details editor is optional" has comment "Get from common TC"
+   Test case: "Verify Details rich text editor formatting and persistence" has no comment
+   After Review Apply
+   Test case: "Verify the text area" common UI component test case
+        
+   Before Review Apply
+   Test case: "Verify Files common component upload and persistence" has comment "Get from common TC".
+   Test case: "Verify Files common component delete behavior" has no comment.
+   After Review Apply
+   Test case: "Verify the file upload function" common UI component test case
+   ```
 7. If comments available in Comments pane; Add new "Comments" and "Replies" columns, use the exact name. Paste the Comment from the Review document in following format,
    ```
    Column: {Table Header Name}
@@ -49,7 +62,7 @@ Update test cases based on review comments
    Add the Review Reply in the corresponding new Replies column cell.
 9. Avoid assumptions if missing or contradictory information available.
 10. Use the specified workflow
-   1. Generate downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
+    1. Generate downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
 	2. Use the above excel document and the base excel document with the excel-diff-highlighter skill in the Knowledge. Highlight the above generated excel document.
 11. The deliverables should be the following
     - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
