@@ -69,10 +69,12 @@ Update test cases based on review comments
    Add the Review Reply in the corresponding new Replies column cell.
 9. Avoid assumptions if missing or contradictory information available.
 10. Use the specified workflow
-    1. Generate downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".
+    1. Generate downloadable excel document with test case review updates, comments, replies.  
+       The excel document must have only one sheet. The sheet name should follow the format "ScreenID_Page Title" whenever it is valid for Excel.  
+       If the resulting sheet name exceeds Excel's 31-character worksheet-name limit, keep the full ScreenID, truncate only the Page Title portion, and use the resulting Excel-safe sheet name.
 	2. Use the above excel document and the base excel document with the excel-diff-highlighter skill in the Knowledge. Highlight the above generated excel document.
 11. The deliverables should be the following
-    - Downloadable excel document with test case review updates, comments, replies. The excel document must have only one sheet with sheet name exactly in the format "ScreeID_Page Title".  
+    - Downloadable excel document with test case review updates, comments, replies.  
     e.g. SP204049_New Waiver Request      
     This excel document must have highlighting for all modifications. All updated cells are highlighted. Use the excel-diff-highlighter skill configured in Knowledge.
 
@@ -85,8 +87,19 @@ Update test cases based on review comments
 1. A summary response of all the sheet names is required, upon which user would type and input a prompt with a single sheet name. This must match any sheet name in the summary respone list, fully or partially.  
    Conside this as a user confirmation and approval.  
    Do not proceed with test case review apply until user has confirmed and approved.
-2. The deliverable excel worksheet/workbook must have only a single sheet in it.
-3. The review apply deliverable must have review updates, comments, replies with highlighting.
+2. The review apply deliverable must have review updates, comments, replies with highlighting.
+3. The deliverable excel worksheet/workbook must have only a single sheet in it.
+4. The deliverable excel worksheet/workbook must satisfy Excel compatibility requirements.
+   - Excel worksheet names must be 31 characters or fewer.
+   - Excel worksheet names must not contain these characters: \ / ? * \[ \] :
+   - If the required sheet name in the format "ScreenID_Page Title" is longer than 31 characters, truncate the Page Title portion only.
+   - Preserve the full ScreenID at the beginning of the sheet name.
+   - Do not truncate the ScreenID.
+   - The final sheet name must still clearly identify the page.
+
+   Example:  
+   Required logical name: SP203005_New SAAS Upgrade Request  
+   Excel-safe sheet name: SP203005_New SAAS Upgrade Reque
 
 
 ## Linked instructions
